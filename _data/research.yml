@@ -1,7 +1,7 @@
 - title: Research Assistant
   time: Spring 2017
   company: University of Texas at Austin
-  description1: Assisted graduate student in Dr. Chidambaram's group. Main contribution: implemented fractional cascading in fragmented log-structured merge trees to help reduce write amplification in key-value stores.
+  description1: Assisted graduate student in Dr. Chidambaram's group. Main contribution implemented fractional cascading in fragmented log-structured merge trees to help reduce write amplification in key-value stores.
   image: assets/img/ut.jpg
 
 - title: Editor of Undergraduate Engineering Research

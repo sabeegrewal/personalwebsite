@@ -1,12 +1,12 @@
-# sabeegrewal.com 
-personal site made with [jekyll](http://jekyllrb.com) and hosted with Github Pages.
 
-forked from [getmicha.github.io](https://github.com/getmicah/getmicah.github.io)
 
-## stuff to add
-- MCv1
-- active research projects
-- papers
+<!-- ## stuff to add
+- papers (arxiv link), CV 
+ -->
 
-### License
-All this stuff is under the [MIT License](https://opensource.org/licenses/MIT)
+
+to build site locally (for teests):
+- [install ruby 2.1.0 or higher](https://www.ruby-lang.org/en/downloads/). check with `ruby --version`
+- install bundler. run: `gem install bundler`
+- run `bundle install`
+- that's it! now just run `bundle exec jekyll serve` to view the site local
