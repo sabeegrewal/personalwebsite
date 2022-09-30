@@ -119,9 +119,8 @@ ul {
 		margin-bottom: 5px;
 	}
     h2 {
-		font-size: 1.0em;
+		font-size: 1.1em;
         font-weight: bold;
-        padding-top: 5px;
 	}
     h3 {
 		font-size: 0.9em;
@@ -136,8 +135,8 @@ ul {
         padding-left: 10px;
 	}
     li {
-        padding-top: 0px;
-        padding-bottom: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     b {
         font-weight: bold;
@@ -148,6 +147,9 @@ ul {
         width: 100%;
         margin-top: 10px;
     }
+	i {
+		font-style: italic;
+	}
     td {
         border: 1px solid #dddddd;
         text-align: left;

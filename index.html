@@ -3,60 +3,88 @@ layout: default
 ---
 
 <div class="header">
-    <h1>{{ site.name }}</h1>
-    <ul>
-        {% for item in site.data.navigation %}
-        <li>
-            <a href="{{ item.url }}">{{ item.title }}</a>
-        </li>
-        {% endfor %}
-    </ul>
+  <h1>{{ site.name }}</h1>
+  <ul>
+    {% for item in site.data.navigation %}
+    <li>
+      <a href="{{ item.url }}" target="_blank">{{ item.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
 </div>
 <div class="portfolio">
-    <h1>
-      <a href="#" id="1_arrows" class="arrows" onclick="expand_collapse('1');">&#9650</a>
-      About
-    </h1>
-    <div id="1" style="display:block;">
-      <p>
-      <ul>
-          <li>
-            I am a PhD student in the <a href="https://www.cs.utexas.edu/" target="_blank">Computer Science Department</a> at the University of Texas
-            at Austin, 
-            under the guidance of <a href="https://scottaaronson.com/" target="_blank">Scott Aaronson</a>. 
-            <!-- I earned a B.S. in Electrical and Computer Engineering, a B.S. in Physics, and an M.S. 
+  <h1>
+    <a href="#" id="1_arrows" class="arrows" onclick="expand_collapse('1');">&#9650</a>
+    About
+  </h1>
+  <div id="1" style="display:block;">
+    <p>
+    <ul>
+      <li>
+        I'm a PhD student in the <a href="https://www.cs.utexas.edu/" target="_blank">Computer Science Department</a> at
+        the University of Texas
+        at Austin,
+        under the guidance of <a href="https://scottaaronson.com/" target="_blank">Scott Aaronson</a>.
+        <!-- I earned a B.S. in Electrical and Computer Engineering, a B.S. in Physics, and an M.S. 
             in Electrical and Computer Engineering at UT Austin. 
 
             I also worked as a Software Engineer on the Hyperscale Compute team in Microsoft Azure. 
             Specifically, I was on the core development team for <a href="https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-what-is-event-hubs">Azure Event Hubs</a>
             where I integrated Apache Spark and Databricks.  -->
-          </li>
-      </ul>
-      </p>
-    </div>
+      </li>
+    </ul>
+    </p>
+  </div>
 </div>
 <div class="blog">
-    <h1>
-      <a href="#" id="2_arrows" class="arrows" onclick="expand_collapse('2');">&#9660</a> 
-      Contact
-    </h1>
-    <div id="2" style="display:none;">
-      <script src="../assets/js/clipboard.min.js">new Clipboard('#hey');</script>
-<script>new Clipboard('#hey');</script>
+  <h1>
+    <a href="#" id="3_arrows" class="arrows" onclick="expand_collapse('3');">&#9650</a>
+    Publications
+  </h1>
+  <div id="3" style="display:block;">
+    <p>
+    <ol reversed style="PADDING-LEFT: 34px">
+      <li>
+        <h2>Low-Stabilizer-Complexity Quantum States Are Not Pseudorandom</h2>
+        Sabee Grewal, <a href="https://vishnuiyer.org/" target="_blank">Vishnu Iyer</a>, <a
+          href="https://www.cs.utexas.edu/~kretsch/" target="_blank">William Kretschmer</a>,
+        Daniel Liang<br>
+        <a href="https://arxiv.org/abs/2209.14530" target="_blank">[arXiv]</a>
+      </li>
 
-<p>You can contact me at
-<input id="foo" value="grewalsabee@gmail.com" readonly size="21">
-<button class="btn" id="hey" data-clipboard-target="#foo">
-    <img src="../assets/img/clippy.svg" alt="Copy to clipboard">
-</button>
-</p>
-    </div>
+      <li>
+        <h2>Classical Shadows With Noise</h2>
+        Dax Enshan Koh, Sabee Grewal<br>
+        <i>Quantum</i> 6, 776 (2022)<br>
+        <a href="https://arxiv.org/abs/2011.11580" target="_blank">[arXiv]</a>&nbsp; <a
+          href="https://quantum-journal.org/papers/q-2022-08-16-776/" target="_blank">[Journal]</a>
+      </li>
+    </ol>
+    </p>
+  </div>
+</div>
+<div class="blog">
+  <h1>
+    <a href="#" id="2_arrows" class="arrows" onclick="expand_collapse('2');">&#9660</a>
+    Contact
+  </h1>
+  <div id="2" style="display:none;">
+    <script src="../assets/js/clipboard.min.js">new Clipboard('#hey');</script>
+    <script>new Clipboard('#hey');</script>
+
+    <p>You can contact me at
+      <input id="foo" value="grewalsabee@gmail.com" readonly size="21">
+      <button class="btn" id="hey" data-clipboard-target="#foo">
+        <img src="../assets/img/clippy.svg" alt="Copy to clipboard">
+      </button>
+    </p>
+  </div>
 </div>
 
 <!-- <div class="blog">
     <h1>
       <a href="#" id="2_arrows" class="arrows" onclick="expand_collapse('2');">&#9660</a> -->
-      <!-- Projects:
+<!-- Projects:
     </h1>
     <div id="2" style="display:none;">
       <ul>
