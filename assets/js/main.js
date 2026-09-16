@@ -1,20 +1,42 @@
-// The email stays selectable when JavaScript or clipboard access is unavailable.
-document.querySelectorAll("[data-copy-target]").forEach((button) => {
-  const input = document.getElementById(button.dataset.copyTarget);
-  const status = document.getElementById(button.dataset.copyStatus);
-  if (!input || !status) return;
+// Light obfuscation for basic scrapers; the address is not a secret.
+document.querySelectorAll("[data-email]").forEach((contact) => {
+  const reveal = contact.querySelector("[data-email-reveal]");
+  const address = contact.querySelector("[data-email-address]");
+  const copy = contact.querySelector("[data-email-copy]");
+  const status = contact.querySelector("[data-email-status]");
+  let resetLabel;
 
-  button.hidden = false;
-  button.addEventListener("click", async () => {
+  contact.querySelector("[data-email-fallback]").hidden = true;
+  reveal.hidden = false;
+  reveal.addEventListener("click", () => {
+    const email = contact.dataset.email.split("").reverse().join("");
+    address.textContent = email;
+    address.href = `mailto:${email}`;
+    address.hidden = false;
+    copy.hidden = false;
+    reveal.hidden = true;
+    address.focus();
+  }, { once: true });
+
+  copy.addEventListener("click", async () => {
+    clearTimeout(resetLabel);
+    copy.textContent = "[copy]";
+    status.classList.add("visually-hidden");
+    status.textContent = "";
     try {
-      await navigator.clipboard.writeText(input.value);
+      await navigator.clipboard.writeText(address.textContent);
+      copy.textContent = "[copied]";
       status.textContent = "Email copied.";
-      button.title = "Email copied.";
     } catch {
-      input.focus();
-      input.select();
-      status.textContent = "Email selected. Press Control+C or Command+C to copy.";
-      button.title = "Select the email and copy it with your keyboard.";
+      address.focus();
+      const range = document.createRange();
+      range.selectNodeContents(address);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      status.classList.remove("visually-hidden");
+      status.textContent = "Email selected — copy with your keyboard or selection menu.";
     }
+    resetLabel = setTimeout(() => { copy.textContent = "[copy]"; }, 2000);
   });
 });

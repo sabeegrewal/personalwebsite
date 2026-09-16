@@ -10,25 +10,37 @@ readability, and a brighter highlight color.
 - **Keep the familiar typography.** Inconsolata appears throughout. The name
   stays light, section headings and paper titles are bold, and authors keep
   their blue links. Size and weight establish hierarchy without changing the
-  site's character.
+  site's character. The original 16px body text and 600px content column keep
+  the page compact; the 50px gap below the name restores the original header
+  proportions.
 - **Keep the portrait beside the biography.** The name sits above the
   introduction, with the 140px portrait floated to the right of the opening
   paragraph, as in the original layout. Text uses the full width below the
-  photo. On phones, the portrait is smaller and its width is capped to leave
-  room for the text, including when text is enlarged.
-- **Add just enough breathing room.** The content column is 636px wide at the
-  default text size. Publication metadata has a 1.3 line height with 1px gaps;
+  photo. On phones, its width is capped at 40% of the column to leave room for
+  the text, including when text is enlarged.
+- **Add just enough breathing room.** Publication metadata has a 1.3 line height with 1px gaps;
   publications are separated by 18px. The small internal gaps keep each paper
   together, while the larger gap separates it from the next entry.
   Intro paragraphs and profile links share a 12px gap. A nonbreaking space
   keeps Henry Yuen's name together when the introduction wraps.
+- **Keep the profile links together.** `[CV]`, `[Google Scholar]`, and `[Email]`
+  share one compact row using the same bracket notation as publication links.
+  Clicking `[Email]` replaces it with the address and a small `[copy]` button;
+  the row wraps naturally on narrow screens. This replaces the homepage's
+  bottom Contact section; the old `/contact/` URL remains usable.
 - **Make special mentions stand out.** Coverage and awards use raspberry
   (`#c2185b`) alongside the original blue (`#1a0dab`). There are no decorative
   section dividers or colored backgrounds competing with the content.
 - **Retain useful interaction improvements.** Native disclosures work with
   the keyboard and without JavaScript. Focus outlines remain visible, hover
-  underlines do not shift the page, and the copy-email control has a manual
-  selection fallback.
+  underlines do not shift the page, and the email controls support keyboard
+  activation, copy feedback, and manual selection when clipboard access fails.
+  Without JavaScript, email is shown in readable `[at]` / `[dot]` form.
+
+The email reveal takes inspiration from
+[Chris Donahue's click-to-unscramble interaction](https://chrisdonahue.com/),
+using an immediate reveal to keep the interaction small and predictable.
+The address is lightly obfuscated in the page source, not kept secret.
 
 These choices apply the grouping and hierarchy principles described by
 [Nielsen Norman Group](https://www.nngroup.com/articles/visual-hierarchy-ux-definition/)
@@ -56,7 +68,7 @@ spacing is controlled in CSS rather than with line breaks. Content remains in
   portrait alignment, and the restored border and left-side toggles.
 - Biography, publication text, ordering, and publication destinations are
   compared against a build saved immediately before the styling revision.
-- Keyboard disclosures, no-JavaScript behavior, and clipboard success/fallback
+- Keyboard disclosure/reveal controls, no-JavaScript behavior, and clipboard success/fallback
   paths are exercised in Chrome.
 - Text colors exceed the 4.5:1 threshold in
   [W3C's contrast guidance](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html).

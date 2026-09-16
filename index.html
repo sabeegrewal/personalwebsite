@@ -13,8 +13,9 @@ layout: default
       Before that, I got my PhD at UT Austin, advised by <a href="https://scottaaronson.com" target="_blank" rel="noopener">Scott Aaronson</a>. During my PhD, I interned at IBM Research in 2024 and Google Quantum AI in 2026, and was supported by an <a href="https://research.ibm.com/university/awards/fellowships-awardees.html" target="_blank" rel="noopener">IBM PhD Fellowship</a> in 2024.
     </p>
     <nav class="profile-links" aria-label="Profile links">
-      <a href="{{ '/cv.pdf' | relative_url }}" target="_blank" rel="noopener">CV</a>
-      <a href="https://scholar.google.com/citations?user=Ses4tNAAAAAJ&amp;hl=en">Google Scholar</a>
+      <a href="{{ '/cv.pdf' | relative_url }}" target="_blank" rel="noopener">[CV]</a>
+      <a href="https://scholar.google.com/citations?user=Ses4tNAAAAAJ&amp;hl=en">[Google Scholar]</a>
+      {% include email.html compact=true %}
     </nav>
   </div>
 </header>
@@ -26,9 +27,4 @@ layout: default
       {% include publication.html publication=publication %}
     {% endfor %}
   </ol>
-</details>
-
-<details class="section" id="contact">
-  <summary><h2>Contact</h2></summary>
-  {% include contact.html size=21 %}
 </details>

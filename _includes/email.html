@@ -1,0 +1,8 @@
+<span class="email-contact" data-email="{{ site.email | split: '' | reverse | join: '' | escape }}">
+  {% unless include.compact %}<span>Email:</span>{% endunless %}
+  <span data-email-fallback>{{ site.email | replace: '@', ' [at] ' | replace: '.', ' [dot] ' | escape }}</span>
+  <button type="button" data-email-reveal aria-label="Reveal email address" hidden>{% if include.compact %}[Email]{% else %}[click to reveal]{% endif %}</button>
+  <a data-email-address hidden></a>
+  <button type="button" data-email-copy aria-label="Copy email address" hidden>[copy]</button>
+  <span data-email-status class="visually-hidden" role="status"></span>
+</span>

@@ -118,8 +118,8 @@ The design uses Inconsolata from Google Fonts, with local monospace fallbacks. S
 | Fonts, colors, spacing, and responsive styles | `assets/css/main.css` |
 | Shared document structure | `_layouts/default.html` |
 | Interior-page heading and back link | `_layouts/page.html` |
-| Publication and contact markup | `_includes/` |
-| Copy-email behavior | `assets/js/main.js` |
+| Publication and email markup | `_includes/` |
+| Reveal-email and copy behavior | `assets/js/main.js` |
 | Contact, microscope, and project pages | `contact/`, `microscope/`, `projects/` |
 | CV | `cv.pdf` |
 
@@ -146,10 +146,19 @@ numeric `year`; `venue` can then name a conference appearance. Optional `award`
 text displays with a trophy. Optional `coverage` uses the same `label`/`url`
 entries as `links`. Quote text containing a colon so it remains valid YAML.
 
-The expandable sections use native HTML `<details>` elements. They work without
-JavaScript; the `open` attribute determines which sections start expanded.
-JavaScript only handles the copy-email button. If clipboard access is blocked,
-it selects the email so it can be copied manually.
+The expandable Research section uses native HTML `<details>`. It works without
+JavaScript; the `open` attribute determines whether it starts expanded.
+
+`[Email]` sits beside `[CV]` and `[Google Scholar]`. One click reveals the address and its
+`[copy]` button. JavaScript handles both actions; if clipboard access is blocked,
+it selects the address for manual copying. Without JavaScript, the address is
+shown in readable `[at]` / `[dot]` form. The existing `/contact/` page uses the
+same email include, while the homepage no longer has a separate Contact section.
+
+Keep editing the address in `_config.yml`. The template reverses it in a data
+attribute and the script restores it on request. This only deters basic
+scrapers; it is not encryption or a guarantee against spam. The public source
+repository and historical PGP key also contain the address.
 
 Historical work, research, teaching, and project data lives in `_archive/`.
 It is preserved for reference and excluded from the generated site. See
@@ -168,8 +177,9 @@ It also checks that development files and the archive are not published. It
 does not request external websites or check whether publication details are current.
 
 Before finishing a visual change, preview both a wide and a narrow browser
-window, toggle Research and Contact with the keyboard, and try copying the
-email on both the homepage and `/contact/`.
+window, toggle Research with the keyboard, and try revealing and copying the
+email on both the homepage and `/contact/`. Check the fallback with JavaScript
+disabled as well.
 
 ## Troubleshooting
 
