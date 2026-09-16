@@ -160,6 +160,9 @@ attribute and the script restores it on request. This only deters basic
 scrapers; it is not encryption or a guarantee against spam. The public source
 repository and historical PGP key also contain the address.
 
+The shared layout versions the CSS and JavaScript URLs using the build time,
+so browsers fetch the updated files after a deployment.
+
 Historical work, research, teaching, and project data lives in `_archive/`.
 It is preserved for reference and excluded from the generated site. See
 [the audit notes](docs/audit.md) for the cleanup decisions and remaining content
