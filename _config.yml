@@ -1,23 +1,16 @@
-# Blog settings
-permalink: /blog/:title
-
-
-# My variables
-name: Sabee Grewal 
+# Site identity
+name: Sabee Grewal
 description: Personal website
+email: grewalsabee@gmail.com
+url: https://sabeegrewal.com
+baseurl: ""
 google_verification: null
 
-
-# File management
+# Build
 include: [".htaccess"]
-exclude: ["README.md", "LICENSE"]
-
-
-# Sass
-sass:
-  style: :compressed
-  sass_dir: _sass
-
+exclude: ["README.md", "LICENSE", "Gemfile", "Gemfile.lock", "vendor", "docs", "script", "_archive"]
+plugins:
+  - jekyll-sitemap
 
 # Markdown
 markdown: kramdown

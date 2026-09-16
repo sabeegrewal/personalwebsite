@@ -1,0 +1,9 @@
+<p class="contact-details">You can contact me at
+  <span class="email-control">
+    <input id="contact-email" value="{{ site.email | escape }}" aria-label="Email address" readonly size="{{ include.size | default: 20 }}">
+    <button type="button" data-copy-target="contact-email" data-copy-status="copy-status" aria-label="Copy email to clipboard" title="Copy email to clipboard" hidden>
+      <img src="{{ '/assets/img/clippy.svg' | relative_url }}" alt="">
+    </button>
+  </span>
+  <span id="copy-status" class="visually-hidden" role="status"></span>
+</p>

@@ -1,0 +1,36 @@
+{% assign publication = include.publication %}
+<li>
+  <h3 class="publication-title">{{ publication.title | escape }}</h3>
+  <p class="publication-authors">
+    {% for name in publication.authors -%}
+      {% assign url = site.data.people[name] -%}
+      {% if url -%}
+        <a href="{{ url | escape }}" target="_blank" rel="noopener">{{ name | escape }}</a>
+      {%- else -%}
+        {{ name | escape }}
+      {%- endif -%}
+      {% unless forloop.last %}, {% endunless %}
+    {%- endfor %}
+  </p>
+  {% if publication.journal or publication.venue %}
+    <p class="publication-venue">
+      {% if publication.journal %}<em>{{ publication.journal | escape }}</em> ({{ publication.year }}){% if publication.venue %}, {% endif %}{% endif %}{{ publication.venue | escape }}
+    </p>
+  {% endif %}
+  {% if publication.award %}
+    <p class="publication-award"><strong>{{ publication.award | escape }}</strong> <span aria-hidden="true">🏆</span></p>
+  {% endif %}
+  {% if publication.coverage %}
+    <p class="publication-coverage">
+      <strong>Coverage:</strong>
+      {% for link in publication.coverage %}
+        <a href="{{ link.url | escape }}" target="_blank" rel="noopener">{{ link.label | escape }}</a>{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </p>
+  {% endif %}
+  <p class="publication-links">
+    {% for link in publication.links %}
+      <a href="{{ link.url | escape }}" target="_blank" rel="noopener">[{{ link.label | escape }}]</a>
+    {% endfor %}
+  </p>
+</li>

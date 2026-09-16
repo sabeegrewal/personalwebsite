@@ -1,0 +1,246 @@
+- title: QMA has perfect completeness
+  authors:
+  - Sabee Grewal
+  - Dorian Rudolph
+  links:
+  - label: arXiv
+    url: https://arxiv.org/abs/2609.13032
+
+- title: A quantum oracle separation between QMA(2) and QMA
+  authors:
+  - John Bostanci
+  - Sabee Grewal
+  - Jonas Haferkamp
+  - Andrew Huang
+  - Yeongwoo Hwang
+  - Anand Natarajan
+  - Chinmay Nirkhe
+  links:
+  - label: arXiv
+    url: https://arxiv.org/abs/2609.02865
+
+- title: No low-degree tests for quantum states
+  authors:
+  - Omar Alrabiah
+  - Srinivasan Arunachalam
+  - Sabee Grewal
+  - John Wright
+  links:
+  - label: arXiv
+    url: https://arxiv.org/abs/2608.00265
+
+- title: Nearly Time-Optimal Pure State Tomography with Pauli Measurements
+  authors:
+  - Sabee Grewal
+  - Meghal Gupta
+  - William He
+  - Aniruddha Sen
+  - Mihir Singhal
+  venue: FOCS '26
+  links:
+  - label: arXiv
+    url: https://arxiv.org/abs/2601.04444
+
+- title: On the Pure Quantum Polynomial Hierarchy and Quantified Hamiltonian Complexity
+  authors:
+  - Sabee Grewal
+  - Dorian Rudolph
+  venue: ICALP '26, TQC 2026
+  links:
+  - label: arXiv
+    url: https://arxiv.org/abs/2510.06522
+  - label: ICALP '26
+    url: https://doi.org/10.4230/LIPIcs.ICALP.2026.103
+
+- title: Efficient Learning of Structured Quantum Circuits via Pauli Dimensionality and Sparsity
+  authors:
+  - Sabee Grewal
+  - Daniel Liang
+  links:
+  - label: arXiv
+    url: https://arxiv.org/abs/2510.00168
+
+- title: Unentanglement and Post-Measurement Branching in Quantum Interactive Proofs
+  authors:
+  - Sabee Grewal
+  - William Kretschmer
+  venue: TQC '26
+  links:
+  - label: arXiv
+    url: https://arxiv.org/abs/2509.15319
+  - label: ECCC
+    url: https://eccc.weizmann.ac.il/report/2025/145/
+
+- title: Demonstrating an Unconditional Separation Between Quantum and Classical Information Resources
+  authors:
+  - William Kretschmer
+  - Sabee Grewal
+  - Matthew DeCross
+  - Justin A. Gerber
+  - Kevin Gilmore
+  - Dan Gresh
+  - Nicholas Hunter-Jones
+  - Karl Mayer
+  - Brian Neyenhuis
+  - David Hayes
+  - Scott Aaronson
+  coverage:
+  - label: Popular Mechanics
+    url: https://www.popularmechanics.com/science/a68068223/quantum-supremacy-breakthrough/
+  - label: NewScientist
+    url: https://www.newscientist.com/article/2496944-quantum-computers-have-finally-achieved-unconditional-supremacy/
+  - label: Gizmodo
+    url: https://gizmodo.com/researchers-claim-first-unconditional-proof-of-quantum-advantage-what-happens-next-2000664343
+  - label: Phys.org
+    url: https://phys.org/news/2025-09-scientists-quantum-unconditionally-outperform-classical.html
+  - label: Quantum Insider
+    url: https://thequantuminsider.com/2025/09/20/ut-austin-quantinuum-researchers-report-unconditional-quantum-supremacy/
+  - label: Shtetl-Optimized
+    url: https://scottaaronson.blog/?p=9138
+  links:
+  - label: arXiv
+    url: https://arxiv.org/abs/2509.07255
+
+- title: Computability Theory of Closed Timelike Curves
+  authors:
+  - Scott Aaronson
+  - Mohammad Bavarian
+  - Toby Cubitt
+  - Sabee Grewal
+  - Giulio Gueltrini
+  - Ryan O'Donnell
+  - Marien Raat
+  links:
+  - label: arXiv
+    url: https://arxiv.org/abs/1609.05507
+
+- title: Improved Circuit Lower Bounds and Quantum-Classical Separations
+  authors:
+  - Sabee Grewal
+  - Vinayak M. Kumar
+  links:
+  - label: arXiv
+    url: https://arxiv.org/abs/2408.16406
+  - label: ECCC
+    url: https://eccc.weizmann.ac.il/report/2024/130/
+
+- title: Agnostic Tomography of Stabilizer Product States
+  authors:
+  - Sabee Grewal
+  - Vishnu Iyer
+  - William Kretschmer
+  - Daniel Liang
+  journal: Quantum
+  year: 2026
+  links:
+  - label: arXiv
+    url: https://arxiv.org/abs/2404.03813
+  - label: Journal
+    url: https://quantum-journal.org/papers/q-2026-03-13-2027/
+
+- title: 'Pseudoentanglement ain''t cheap: Lower bounds on the non-Clifford cost of pseudoentanglement'
+  authors:
+  - Sabee Grewal
+  - Vishnu Iyer
+  - William Kretschmer
+  - Daniel Liang
+  journal: Physical Review A
+  year: 2026
+  venue: TQC '24
+  links:
+  - label: arXiv
+    url: https://arxiv.org/abs/2404.00126
+  - label: Journal
+    url: https://journals.aps.org/pra/abstract/10.1103/v493-8s1q
+
+- title: 'PDQMA = DQMA = NEXP: QMA With Hidden Variables and Non-collapsing Measurements'
+  authors:
+  - Scott Aaronson
+  - Sabee Grewal
+  - Vishnu Iyer
+  - Simon Marshall
+  - Ronak Ramachandran
+  venue: FSTTCS '25
+  links:
+  - label: arXiv
+    url: https://arxiv.org/abs/2403.02543
+  - label: FSTTCS '25
+    url: https://doi.org/10.4230/LIPIcs.FSTTCS.2025.3
+
+- title: The Entangled Quantum Polynomial Hierarchy Collapses
+  authors:
+  - Sabee Grewal
+  - Justin Yirka
+  venue: CCC '24
+  links:
+  - label: arXiv
+    url: https://arxiv.org/abs/2401.01453
+  - label: ECCC
+    url: https://eccc.weizmann.ac.il/report/2024/006/
+  - label: CCC '24
+    url: https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.CCC.2024.6
+
+- title: Efficient Learning of Quantum States Prepared With Few Non-Clifford Gates
+  authors:
+  - Sabee Grewal
+  - Vishnu Iyer
+  - William Kretschmer
+  - Daniel Liang
+  journal: Quantum
+  year: 2025
+  venue: QIP '24
+  links:
+  - label: arXiv
+    url: https://arxiv.org/abs/2305.13409
+  - label: Journal
+    url: https://quantum-journal.org/papers/q-2025-11-06-1907/
+
+- title: Improved Stabilizer Estimation via Bell Difference Sampling
+  authors:
+  - Sabee Grewal
+  - Vishnu Iyer
+  - William Kretschmer
+  - Daniel Liang
+  venue: STOC '24, QIP '24
+  links:
+  - label: arXiv
+    url: https://arxiv.org/abs/2304.13915
+  - label: STOC '24
+    url: https://dl.acm.org/doi/10.1145/3618260.3649738
+
+- title: Efficient Tomography of Non-Interacting Fermion States
+  authors:
+  - Scott Aaronson
+  - Sabee Grewal
+  venue: TQC '23
+  links:
+  - label: arXiv
+    url: https://arxiv.org/abs/2102.10458
+  - label: TQC '23
+    url: https://drops.dagstuhl.de/opus/volltexte/2023/18322/
+
+- title: Low-Stabilizer-Complexity Quantum States Are Not Pseudorandom
+  authors:
+  - Sabee Grewal
+  - Vishnu Iyer
+  - William Kretschmer
+  - Daniel Liang
+  venue: ITCS '23
+  award: Best Student Paper Award
+  links:
+  - label: arXiv
+    url: https://arxiv.org/abs/2209.14530
+  - label: ITCS '23
+    url: https://drops.dagstuhl.de/opus/volltexte/2023/17567/
+
+- title: Classical Shadows With Noise
+  authors:
+  - Dax Enshan Koh
+  - Sabee Grewal
+  journal: Quantum
+  year: 2022
+  links:
+  - label: arXiv
+    url: https://arxiv.org/abs/2011.11580
+  - label: Journal
+    url: https://quantum-journal.org/papers/q-2022-08-16-776/

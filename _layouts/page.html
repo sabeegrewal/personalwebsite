@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<a href="{{ '/' | relative_url }}">&lt;-- back</a>
+<h1 class="page-title">{{ page.heading | default: page.title | escape }}</h1>
+<div class="page-content">
+  {{ content }}
+</div>
