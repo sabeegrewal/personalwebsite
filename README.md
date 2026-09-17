@@ -146,6 +146,10 @@ numeric `year`; `venue` can then name a conference appearance. Optional `award`
 text displays with a trophy. Optional `coverage` uses the same `label`/`url`
 entries as `links`. Quote text containing a colon so it remains valid YAML.
 
+Optional `divider_after` text adds a compact dashed divider below that paper,
+with its label aligned to the right. The before/after LLMs marker uses this field
+so it stays with the intended publication as new papers are added.
+
 The expandable Research section uses native HTML `<details>`. It works without
 JavaScript; the `open` attribute determines whether it starts expanded.
 

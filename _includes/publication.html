@@ -1,5 +1,5 @@
 {% assign publication = include.publication %}
-<li>
+<li{% if publication.divider_after %} class="publication-with-divider"{% endif %}>
   <h3 class="publication-title">{{ publication.title | escape }}</h3>
   <p class="publication-authors">
     {% for name in publication.authors -%}
@@ -33,4 +33,9 @@
       <a href="{{ link.url | escape }}" target="_blank" rel="noopener">[{{ link.label | escape }}]</a>
     {% endfor %}
   </p>
+  {% if publication.divider_after %}
+    <div class="publication-divider" role="separator" aria-label="{{ publication.divider_after | escape }}">
+      <span aria-hidden="true">{{ publication.divider_after | escape }}</span>
+    </div>
+  {% endif %}
 </li>

@@ -7,6 +7,7 @@
     url: https://arxiv.org/abs/2609.13032
 
 - title: A quantum oracle separation between QMA(2) and QMA
+  divider_after: before / after LLMs
   authors:
   - John Bostanci
   - Sabee Grewal
