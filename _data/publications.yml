@@ -1,3 +1,13 @@
+- title: "Marton's conjecture in polynomial time"
+  authors:
+  - Srinivasan Arunachalam
+  - Arkopal Dutt
+  - Sabee Grewal
+  - Aparna Gupte
+  links:
+  - label: arXiv
+    url: https://arxiv.org/abs/2609.20771
+
 - title: QMA has perfect completeness
   authors:
   - Sabee Grewal
