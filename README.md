@@ -154,7 +154,9 @@ The expandable Research section uses native HTML `<details>`. It works without
 JavaScript; the `open` attribute determines whether it starts expanded.
 
 `[Email]` sits beside `[CV]` and `[Google Scholar]`. One click reveals the address and its
-`[copy]` button. JavaScript handles both actions; if clipboard access is blocked,
+`[copy]` button. After five seconds, they fade back to the reveal button; copying
+restarts the timer. Reduced-motion preferences skip the fade. The button can be
+used repeatedly. JavaScript handles both actions; if clipboard access is blocked,
 it selects the address for manual copying. Without JavaScript, the address is
 shown in readable `[at]` / `[dot]` form. The existing `/contact/` page uses the
 same email include, while the homepage no longer has a separate Contact section.
