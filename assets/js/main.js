@@ -42,7 +42,7 @@ document.querySelectorAll("[data-email]").forEach((contact) => {
         duration,
         easing: "ease-in",
       });
-    }, 3000);
+    }, 2500);
   };
 
   contact.querySelector("[data-email-fallback]").hidden = true;
