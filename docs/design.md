@@ -30,10 +30,10 @@ readability, and a brighter highlight color.
   bottom Contact section; the old `/contact/` URL remains usable.
 - **Make special mentions stand out.** Coverage and awards use raspberry
   (`#c2185b`) alongside the original blue (`#1a0dab`).
-- **Keep the LLM era marker quiet.** A pale lavender-gray dashed line separates
-  the quantum oracle separation paper from the low-degree tests paper, with a
-  small muted label at the right edge. It adds minimal space between the papers
-  and keeps the publication numbering continuous.
+- **Keep the optional LLM era marker quiet (currently disabled).** When enabled,
+  a pale lavender-gray dashed line separates the quantum oracle separation paper
+  from the low-degree tests paper, with a small muted label at the right edge.
+  It adds minimal space between the papers and keeps the numbering continuous.
 - **Retain useful interaction improvements.** Native disclosures work with
   the keyboard and without JavaScript. Focus outlines remain visible, hover
   underlines do not shift the page, and the email controls support keyboard
