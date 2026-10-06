@@ -1,3 +1,33 @@
+- title: Pretty good shadow tomography
+  authors:
+  - Sabee Grewal
+  - Angelos Pelecanos
+  - Jack Spilecki
+  - Ewin Tang
+  - John Wright
+  links:
+  - label: arXiv
+    url: https://arxiv.org/abs/2610.06781
+
+- title: Optimal and Verifiable Quantum Advantages in Communication Complexity
+  authors:
+  - Ryan Anselm
+  - Michelle Ding
+  - Dar Gilboa
+  - Sabee Grewal
+  links:
+  - label: arXiv
+    url: https://arxiv.org/abs/2610.05585
+
+- title: A classical oracle separation between QMA and QMA(2)
+  authors:
+  - Sabee Grewal
+  - Saachi Mutreja
+  - Kabir Tomer
+  links:
+  - label: arXiv
+    url: https://arxiv.org/abs/2610.06760
+
 - title: "Marton's conjecture in polynomial time"
   authors:
   - Srinivasan Arunachalam
